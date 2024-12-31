@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XDCocoaExts'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XDCocoaExts.'
+  s.version          = '0.0.1'
+  s.summary          = 'Cocoa Category Extension '
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,23 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/黄小朵/XDCocoaExts'
+  s.homepage         = 'https://github.com/huangxiaoduo/XDCocoaExts'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '黄小朵' => 'huang_ze@outlook.com' }
-  s.source           = { :git => 'https://github.com/黄小朵/XDCocoaExts.git', :tag => s.version.to_s }
+  s.author           = { 'zane' => 'huang_ze@outlook.com' }
+  s.source           = { :git => 'https://github.com/huangxiaoduo/XDCocoaExts.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
-  s.source_files = 'XDCocoaExts/Classes/**/*'
+  s.source_files = 'XDCocoaExts/Classes/XDCocoaExts.h'
+  s.public_header_files = 'XDCocoaExts/Classes/XDCocoaExts.h'
+
+  s.subspec 'StringExts' do |ss|
+    ss.source_files = 'XDCocoaExts/Classes/StringExts/*.{h,m}'
+  end
   
-  # s.resource_bundles = {
-  #   'XDCocoaExts' => ['XDCocoaExts/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -1,0 +1,6 @@
+framework module Pods_XDCocoaExts_Example {
+  umbrella header "Pods-XDCocoaExts_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

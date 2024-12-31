@@ -22,7 +22,7 @@ pod 'XDCocoaExts'
 
 ## Author
 
-黄小朵, huang_ze@outlook.com
+zane,zane@outlook.com
 
 ## License
 

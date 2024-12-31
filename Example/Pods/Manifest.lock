@@ -1,0 +1,16 @@
+PODS:
+  - XDCocoaExts (0.1.0)
+
+DEPENDENCIES:
+  - XDCocoaExts (from `../`)
+
+EXTERNAL SOURCES:
+  XDCocoaExts:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XDCocoaExts: e56c13cc95d2a7666ebc1ee2227752dcaab39d0f
+
+PODFILE CHECKSUM: b238e330a2fcfb3bc87b8ecfcf4e2c594c702961
+
+COCOAPODS: 1.16.2
