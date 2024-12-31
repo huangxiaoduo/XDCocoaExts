@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (Exts)
 
+- (id)toJSONValue;
+
 + (NSString *)stringWithInteger:(NSInteger)intValue;
 @end
 

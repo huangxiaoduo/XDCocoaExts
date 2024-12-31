@@ -13,4 +13,18 @@
 {
     return [NSString stringWithFormat:@"%d", (int)intValue];
 }
+
+- (id)toJSONValue
+{
+    NSError *err = nil;
+    id dic = [NSJSONSerialization JSONObjectWithData:[self dataUsingEncoding:NSUTF8StringEncoding]
+                                             options:NSJSONReadingMutableContainers error:&err];
+    if(!dic){
+        dic = [[NSMutableDictionary alloc] initWithCapacity:4];
+        if (!err) {
+            NSLog(@"转换字符串出错: %@",err);
+        }
+    }
+    return dic;
+}
 @end
