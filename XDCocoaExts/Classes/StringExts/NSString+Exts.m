@@ -9,4 +9,8 @@
 
 @implementation NSString (Exts)
 
++ (NSString *)stringWithInteger:(NSInteger)intValue
+{
+    return [NSString stringWithFormat:@"%d", (int)intValue];
+}
 @end
