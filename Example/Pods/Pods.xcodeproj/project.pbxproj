@@ -14,6 +14,12 @@
 		67E2A73DE9A5CBDF1BBA37C9614AC412 /* Pods-XDCocoaExts_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCD970504018B6D13AF7DC04C77AA0CC /* Pods-XDCocoaExts_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8AD058FD85050F2CD496585973F2ECAC /* XDCocoaExts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4774B7F3B76F56C074C1BD55F511592E /* XDCocoaExts-dummy.m */; };
 		8B735678C78E44FD990BFFF51A7AF13A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		99127B652D2692A000CBB870 /* NSData+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B642D2692A000CBB870 /* NSData+Exts.m */; };
+		99127B662D2692A000CBB870 /* NSData+Exts.h in Headers */ = {isa = PBXBuildFile; fileRef = 99127B632D2692A000CBB870 /* NSData+Exts.h */; };
+		99127B672D2692A000CBB870 /* NSData+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B642D2692A000CBB870 /* NSData+Exts.m */; };
+		99127B682D2692A000CBB870 /* NSData+Exts.h in Headers */ = {isa = PBXBuildFile; fileRef = 99127B632D2692A000CBB870 /* NSData+Exts.h */; };
+		99127B692D2692A000CBB870 /* NSData+Exts.h in Headers */ = {isa = PBXBuildFile; fileRef = 99127B632D2692A000CBB870 /* NSData+Exts.h */; };
+		99127B6A2D2692A000CBB870 /* NSData+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B642D2692A000CBB870 /* NSData+Exts.m */; };
 		998DDBD62D238A1600E5FA1C /* NSString+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 998DDBD12D238A1600E5FA1C /* NSString+Exts.m */; };
 		998DDBD72D238A1600E5FA1C /* NSString+Exts.h in Headers */ = {isa = PBXBuildFile; fileRef = 998DDBD02D238A1600E5FA1C /* NSString+Exts.h */; };
 		998DDBDD2D238A4700E5FA1C /* XDCocoaExts.h in Headers */ = {isa = PBXBuildFile; fileRef = 998DDBDC2D238A4700E5FA1C /* XDCocoaExts.h */; };
@@ -56,6 +62,8 @@
 		850A42C6CBB5F4ABB264EA379C3E4D73 /* XDCocoaExts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCocoaExts-prefix.pch"; sourceTree = "<group>"; };
 		892058BF0D856DBAA8A870381BAE83AB /* Pods-XDCocoaExts_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCocoaExts_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8BB5CC4A70CBDB3C2F57C14A27CDB685 /* XDCocoaExts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XDCocoaExts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99127B632D2692A000CBB870 /* NSData+Exts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Exts.h"; sourceTree = "<group>"; };
+		99127B642D2692A000CBB870 /* NSData+Exts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Exts.m"; sourceTree = "<group>"; };
 		997C5B53BC364C71507AFA0F8C6BF17C /* Pods-XDCocoaExts_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDCocoaExts_Tests-dummy.m"; sourceTree = "<group>"; };
 		998DDBD02D238A1600E5FA1C /* NSString+Exts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Exts.h"; sourceTree = "<group>"; };
 		998DDBD12D238A1600E5FA1C /* NSString+Exts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Exts.m"; sourceTree = "<group>"; };
@@ -155,6 +163,15 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		99127B622D26927B00CBB870 /* DataExts */ = {
+			isa = PBXGroup;
+			children = (
+				99127B632D2692A000CBB870 /* NSData+Exts.h */,
+				99127B642D2692A000CBB870 /* NSData+Exts.m */,
+			);
+			path = DataExts;
+			sourceTree = "<group>";
+		};
 		998DDBD22D238A1600E5FA1C /* StringExts */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +184,7 @@
 		998DDBD42D238A1600E5FA1C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				99127B622D26927B00CBB870 /* DataExts */,
 				998DDBD22D238A1600E5FA1C /* StringExts */,
 				998DDBDC2D238A4700E5FA1C /* XDCocoaExts.h */,
 			);
@@ -263,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				998DDBD72D238A1600E5FA1C /* NSString+Exts.h in Headers */,
+				99127B662D2692A000CBB870 /* NSData+Exts.h in Headers */,
 				998DDBDD2D238A4700E5FA1C /* XDCocoaExts.h in Headers */,
 				4CD71D81E11D1DD7BF4A628BA7F607F2 /* XDCocoaExts-umbrella.h in Headers */,
 			);
@@ -273,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75A04668CE824057F43F7AC49375623 /* Pods-XDCocoaExts_Tests-umbrella.h in Headers */,
+				99127B692D2692A000CBB870 /* NSData+Exts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67E2A73DE9A5CBDF1BBA37C9614AC412 /* Pods-XDCocoaExts_Example-umbrella.h in Headers */,
+				99127B682D2692A000CBB870 /* NSData+Exts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AD058FD85050F2CD496585973F2ECAC /* XDCocoaExts-dummy.m in Sources */,
+				99127B652D2692A000CBB870 /* NSData+Exts.m in Sources */,
 				998DDBD62D238A1600E5FA1C /* NSString+Exts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99127B6A2D2692A000CBB870 /* NSData+Exts.m in Sources */,
 				BC2BC990EB7A1E0FDC0C87CF6A055DE7 /* Pods-XDCocoaExts_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99127B672D2692A000CBB870 /* NSData+Exts.m in Sources */,
 				5A4018E01B00F5B80DFA49F0252FBED7 /* Pods-XDCocoaExts_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

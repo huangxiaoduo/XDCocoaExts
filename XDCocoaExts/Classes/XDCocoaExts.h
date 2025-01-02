@@ -9,5 +9,6 @@
 #define XDCocoaExts_h
 
 #import "NSString+Exts.h"
+#import "NSData+Exts.h"
 
 #endif /* XDCocoaExts_h */
