@@ -37,6 +37,9 @@ TODO: Add long description of the pod here.
     ss.source_files = 'XDCocoaExts/Classes/StringExts/*.{h,m}'
   end
   
+  s.subspec 'DataExts' do |ss|
+    ss.source_files = 'XDCocoaExts/Classes/DataExts/*.{h,m}'
+  
 
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
